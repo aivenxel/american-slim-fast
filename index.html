@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>American Slim Fast – Respaldo Médico Real</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{width:100%;background:#fff;color:#1A1A1A;font-family:'Segoe UI',Helvetica,Arial,sans-serif;line-height:1.7;}
+a{text-decoration:none;color:inherit;}
+img{display:block;max-width:100%;}
+ul{list-style:none;}
+
+/* VARIABLES */
+:root{
+  --m:#000B57;
+  --r:#00139E;
+  --red:#FE1413;
+  --sl:#A3B5CB;
+  --bg:#F4F7FB;
+  --rad:12px;
+  --sh:0 4px 24px rgba(0,11,87,.09);
+  --shm:0 8px 40px rgba(0,11,87,.15);
+}
+
+/* LAYOUT */
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px;}
+.sec{padding:88px 0;}
+.sec-alt{background:var(--bg);}
+.tc{text-align:center;}
+
+/* TAG */
+.tag{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--r);background:rgba(0,19,158,.08);border-radius:100px;padding:4px 14px;margin-bottom:14px;}
+
+/* BUTTONS */
+.cta{
+  display:inline-flex;align-items:center;gap:9px;
+  background:var(--red);color:#fff;font-size:.93rem;font-weight:700;
+  border:none;border-radius:50px;padding:14px 28px;cursor:pointer;
+  box-shadow:0 6px 24px rgba(254,20,19,.32);
+  transition:transform .18s,box-shadow .18s;
+}
+.cta:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(254,20,19,.42);}
+.cta-wrap{margin-top:28px;}
+
+.outline-btn{
+  display:inline-flex;align-items:center;gap:7px;
+  background:transparent;color:var(--m);font-size:.83rem;font-weight:700;
+  border:2px solid var(--m);border-radius:50px;padding:9px 22px;
+  transition:background .18s,color .18s;
+}
+.outline-btn:hover{background:var(--m);color:#fff;}
+
+/* NAV */
+nav{
+  position:sticky;top:0;z-index:100;
+  background:rgba(255,255,255,.97);
+  border-bottom:1px solid rgba(163,181,203,.22);
+  padding:11px 0;
+}
+.nav-in{display:flex;align-items:center;justify-content:space-between;}
+.logo-row{display:flex;align-items:center;gap:10px;}
+.logo-txt{font-size:.88rem;font-weight:900;color:var(--m);line-height:1.1;}
+
+/* HERO */
+.hero-sec{padding:68px 0 60px;}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;}
+.hero-grid h1{font-size:2.3rem;font-weight:900;line-height:1.18;color:var(--m);margin-bottom:16px;}
+.hero-grid h1 em{color:var(--red);font-style:normal;}
+.hero-sub{font-size:.97rem;color:#444;margin-bottom:22px;}
+.blist li{display:flex;align-items:flex-start;gap:9px;margin-bottom:8px;font-size:.91rem;}
+.blist li span.dot{width:7px;height:7px;border-radius:50%;background:var(--red);flex-shrink:0;margin-top:9px;}
+.hero-note{background:rgba(0,11,87,.05);border-left:4px solid var(--r);border-radius:0 8px 8px 0;padding:12px 15px;font-size:.87rem;color:var(--m);font-weight:600;margin:18px 0 24px;line-height:1.6;}
+.hero-img{border-radius:var(--rad);overflow:hidden;box-shadow:var(--shm);}
+
+/* SECTION HEADERS */
+.sh{max-width:620px;margin:0 auto 44px;text-align:center;}
+.sh h2{font-size:1.85rem;font-weight:900;color:var(--m);margin-bottom:10px;}
+.sh p{font-size:.95rem;color:#555;}
+h2.lft{font-size:1.85rem;font-weight:900;color:var(--m);margin-bottom:10px;}
+
+/* DOCTOR */
+.doc-bg{background:linear-gradient(135deg,var(--m) 0%,var(--r) 100%);padding:88px 0;}
+.doc-grid{display:grid;grid-template-columns:310px 1fr;gap:48px;align-items:start;}
+.doc-photo-sticky{position:sticky;top:80px;}
+.doc-photo{border-radius:var(--rad);overflow:hidden;box-shadow:0 12px 44px rgba(0,0,0,.32);}
+.doc-tag{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.15);border-radius:100px;padding:4px 14px;margin-bottom:14px;}
+.doc-grid h2{font-size:1.85rem;font-weight:900;color:#fff;margin-bottom:4px;}
+.doc-sub{font-size:.9rem;color:var(--sl);margin-bottom:22px;}
+.metrics{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:22px;}
+.mbox{background:rgba(254,20,19,.14);border:1px solid rgba(254,20,19,.28);border-radius:10px;padding:13px 16px;text-align:center;min-width:96px;}
+.mbox .n{font-size:1.6rem;font-weight:900;color:var(--red);}
+.mbox .l{font-size:.66rem;color:var(--sl);margin-top:2px;line-height:1.3;}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-bottom:20px;}
+.cc{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.11);border-radius:10px;padding:13px;}
+.cc .fl{font-size:1.25rem;margin-bottom:4px;}
+.cc h4{font-size:.8rem;font-weight:700;color:#fff;margin-bottom:3px;}
+.cc p{font-size:.74rem;color:var(--sl);line-height:1.42;}
+.elist li{display:flex;gap:8px;margin-bottom:6px;font-size:.8rem;color:rgba(255,255,255,.8);align-items:flex-start;}
+.elist li::before{content:'◆';color:var(--red);font-size:.52rem;flex-shrink:0;margin-top:6px;}
+
+/* WHO */
+.wgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+.wcard{background:#fff;border:1px solid rgba(163,181,203,.28);border-radius:var(--rad);padding:24px 18px;text-align:center;box-shadow:var(--sh);transition:transform .22s,box-shadow .22s;}
+.wcard:hover{transform:translateY(-4px);box-shadow:var(--shm);}
+.wcard .ic{font-size:1.8rem;margin-bottom:11px;}
+.wcard h3{font-size:.9rem;font-weight:700;color:var(--m);}
+.wcard p{font-size:.78rem;color:#666;margin-top:4px;}
+
+/* APPROACH */
+.agrid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;}
+.alist li{display:flex;align-items:center;gap:11px;padding:12px 0;border-bottom:1px solid rgba(163,181,203,.2);}
+.alist li:last-child{border-bottom:none;}
+.ck{width:26px;height:26px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.ck svg{width:12px;height:12px;stroke:#fff;fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
+.alist li span{font-size:.91rem;font-weight:600;color:var(--m);}
+.anote{background:linear-gradient(135deg,rgba(0,11,87,.04),rgba(0,19,158,.06));border-radius:var(--rad);padding:18px;font-size:.86rem;color:var(--m);line-height:1.7;margin-top:13px;}
+.ibox{border-radius:var(--rad);overflow:hidden;box-shadow:var(--shm);}
+
+/* GLP */
+.ggrid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;}
+.badges{display:flex;flex-wrap:wrap;gap:9px;margin:16px 0;}
+.badge{display:inline-flex;align-items:center;gap:6px;background:rgba(0,11,87,.06);border-radius:100px;padding:6px 13px;font-size:.76rem;font-weight:700;color:var(--m);}
+
+/* VAL */
+.vlist{max-width:660px;margin:0 auto 28px;}
+.vlist li{display:flex;align-items:center;gap:13px;padding:13px 0;border-bottom:1px solid rgba(163,181,203,.2);}
+.vlist li:last-child{border-bottom:none;}
+.vck{width:28px;height:28px;background:linear-gradient(135deg,var(--m),var(--r));border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.vck svg{width:13px;height:13px;stroke:#fff;fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
+.vlist li p{font-size:.92rem;font-weight:600;color:#1A1A1A;}
+.vnote{text-align:center;font-weight:700;color:var(--m);font-size:.95rem;margin-bottom:24px;}
+
+/* STEPS */
+.sgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:32px;}
+.scard{text-align:center;padding:34px 22px;background:#fff;border-radius:var(--rad);box-shadow:var(--sh);transition:transform .22s;}
+.scard:hover{transform:translateY(-4px);}
+.snum{font-size:2.6rem;font-weight:900;color:rgba(0,19,158,.1);line-height:1;margin-bottom:12px;}
+.scard h3{font-size:1rem;font-weight:800;color:var(--m);margin-bottom:7px;}
+.scard p{font-size:.86rem;color:#555;}
+.stag{text-align:center;font-size:1.2rem;font-weight:900;letter-spacing:.08em;color:var(--m);margin-bottom:26px;opacity:.82;}
+
+/* FAQ */
+.flist{max-width:720px;margin:0 auto;}
+.fi{border-bottom:1px solid rgba(163,181,203,.28);}
+.fcb{display:none;}
+.flbl{display:flex;justify-content:space-between;align-items:center;padding:17px 4px;cursor:pointer;font-size:.91rem;font-weight:700;color:var(--m);user-select:none;}
+.farr{transition:transform .28s;color:var(--r);font-size:.95rem;}
+.fcb:checked~.flbl .farr{transform:rotate(180deg);}
+.fbody{max-height:0;overflow:hidden;transition:max-height .32s ease;}
+.fcb:checked~.fbody{max-height:240px;}
+.fbody p{padding:0 4px 17px;font-size:.87rem;color:#555;line-height:1.7;}
+
+/* FOOTER */
+.ftcta{background:linear-gradient(135deg,var(--m) 0%,var(--r) 100%);padding:88px 0;text-align:center;}
+.flogo{display:flex;flex-direction:column;align-items:center;gap:7px;margin-bottom:26px;}
+.fbrand{font-size:1.35rem;font-weight:900;color:#fff;letter-spacing:.03em;}
+.ftcta h2{font-size:1.9rem;font-weight:900;color:#fff;line-height:1.25;max-width:640px;margin:0 auto 13px;}
+.ftcta .sub{color:var(--sl);font-size:.95rem;max-width:500px;margin:0 auto 30px;}
+.fbot{background:var(--m);padding:16px;text-align:center;}
+.fbot p{font-size:.73rem;color:rgba(255,255,255,.35);}
+
+/* SCROLL ANIMATIONS */
+@keyframes fadeUp{from{opacity:0;transform:translateY(26px);}to{opacity:1;transform:none;}}
+@keyframes fadeL{from{opacity:0;transform:translateX(-30px);}to{opacity:1;transform:none;}}
+@keyframes fadeR{from{opacity:0;transform:translateX(30px);}to{opacity:1;transform:none;}}
+.anim-up{animation:fadeUp .65s ease both;}
+.anim-l{animation:fadeL .65s ease both;}
+.anim-r{animation:fadeR .65s ease both;}
+.d1{animation-delay:.05s;}.d2{animation-delay:.15s;}.d3{animation-delay:.25s;}
+.d4{animation-delay:.35s;}.d5{animation-delay:.45s;}.d6{animation-delay:.55s;}
+.d7{animation-delay:.65s;}.d8{animation-delay:.75s;}
+
+/* RESPONSIVE */
+@media(max-width:880px){
+  .hero-grid,.doc-grid,.agrid,.ggrid{grid-template-columns:1fr;}
+  .hero-grid h1{font-size:1.85rem;}
+  .cgrid{grid-template-columns:1fr;}
+  .sgrid{grid-template-columns:1fr;}
+  .doc-bg .doc-grid>div:first-child{max-width:320px;}
+}
+@media(max-width:560px){
+  .sec,.doc-bg,.ftcta{padding:60px 0;}
+  .hero-sec{padding:48px 0 40px;}
+  .hero-grid h1{font-size:1.55rem;}
+  .sh h2,.lft,.doc-grid h2,.ftcta h2{font-size:1.38rem;}
+  .wgrid{grid-template-columns:repeat(2,1fr);}
+  .metrics{flex-direction:column;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="wrap nav-in">
+    <a href="#" class="logo-row">
+      <svg width="38" height="38" viewBox="0 0 100 100" fill="none">
+        <path d="M50 10C74 16 90 31 90 50C90 69 74 84 50 90" stroke="#000B57" stroke-width="12" stroke-linecap="round"/>
+        <path d="M50 10C26 16 10 31 10 50C10 69 26 84 50 90" stroke="#FE1413" stroke-width="12" stroke-linecap="round"/>
+        <circle cx="50" cy="10" r="5" fill="#000B57"/>
+        <circle cx="90" cy="50" r="5" fill="#000B57"/>
+        <circle cx="10" cy="50" r="5" fill="#FE1413"/>
+        <circle cx="50" cy="90" r="5" fill="#FE1413"/>
+      </svg>
+      <div class="logo-txt">AMERICAN<br>SLIM FAST</div>
+    </a>
+    <a href="https://wa.me/15551234567" class="outline-btn" target="_blank" rel="noopener">
+      <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a6.072 6.072 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.092.538 4.063 1.481 5.775L0 24l6.371-1.461A11.932 11.932 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.79 9.79 0 0 1-4.989-1.365l-.357-.212-3.782.867.898-3.67-.233-.376A9.79 9.79 0 0 1 2.182 12C2.182 6.578 6.578 2.182 12 2.182S21.818 6.578 21.818 12 17.422 21.818 12 21.818z"/></svg>
+      Contacto
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero-sec">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="tag anim-up d1">Salud Metabólica · Bariatría · EE.UU.</span>
+        <h1 class="anim-up d2">Controla tu metabolismo y baja de peso con <em>respaldo médico real.</em></h1>
+        <p class="hero-sub anim-up d3">En American Slim Fast te acompañamos con evaluación profesional, seguimiento constante y planes personalizados para mejorar tu salud metabólica y tu bienestar físico y emocional.</p>
+        <ul class="blist anim-up d3">
+          <li><span class="dot"></span>Supervisión médica con Especialista en Bariatría por más de 30 años</li>
+          <li><span class="dot"></span>Seguimiento personalizado</li>
+          <li><span class="dot"></span>Atención virtual + envíos en gran parte de Estados Unidos</li>
+          <li><span class="dot"></span>Enfoque integral: cuerpo, médico y hábitos</li>
+        </ul>
+        <div class="hero-note anim-up d4">Nuestro objetivo no es que dependas de un tratamiento para siempre, sino ayudarte a construir hábitos sostenibles que puedas mantener a largo plazo.</div>
+        <a href="https://wa.me/15551234567" class="cta anim-up d5" target="_blank" rel="noopener">
+          <svg width="17" height="17" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a6.072 6.072 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.092.538 4.063 1.481 5.775L0 24l6.371-1.461A11.932 11.932 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.79 9.79 0 0 1-4.989-1.365l-.357-.212-3.782.867.898-3.67-.233-.376A9.79 9.79 0 0 1 2.182 12C2.182 6.578 6.578 2.182 12 2.182S21.818 6.578 21.818 12 17.422 21.818 12 21.818z"/></svg>
+          Habla con nuestro equipo médico por WhatsApp
+        </a>
+      </div>
+      <!-- Asset: Hero medical SVG placeholder (Asset referencia entorno médico) -->
+      <div class="hero-img anim-r d2">
+        <svg width="100%" height="420" viewBox="0 0 560 420" xmlns="http://www.w3.org/2000/svg">
+          <rect width="560" height="420" fill="#E8EEF6" rx="12"/>
+          <rect x="36" y="36" width="170" height="348" rx="12" fill="#C8D5E8"/>
+          <rect x="52" y="54" width="138" height="88" rx="8" fill="#A3B5CB"/>
+          <circle cx="121" cy="230" r="48" fill="#A3B5CB"/>
+          <rect x="52" y="296" width="138" height="10" rx="5" fill="#8FA5BE"/>
+          <rect x="240" y="60" width="155" height="13" rx="6" fill="#000B57" opacity=".22"/>
+          <rect x="240" y="88" width="210" height="8" rx="4" fill="#C8D5E8"/>
+          <rect x="240" y="108" width="180" height="8" rx="4" fill="#C8D5E8"/>
+          <rect x="240" y="145" width="65" height="26" rx="13" fill="#00139E" opacity=".18"/>
+          <rect x="318" y="145" width="65" height="26" rx="13" fill="#FE1413" opacity=".15"/>
+          <rect x="240" y="206" width="270" height="2" fill="#C8D5E8"/>
+          <rect x="240" y="226" width="230" height="8" rx="4" fill="#C8D5E8"/>
+          <rect x="240" y="248" width="190" height="8" rx="4" fill="#C8D5E8"/>
+          <rect x="240" y="270" width="210" height="8" rx="4" fill="#C8D5E8"/>
+          <rect x="240" y="324" width="230" height="42" rx="21" fill="#FE1413" opacity=".16"/>
+          <text x="355" y="351" font-family="Arial" font-size="11" fill="#000B57" text-anchor="middle" font-weight="bold" opacity=".7">Entorno Médico Profesional</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOCTOR -->
+<section class="doc-bg">
+  <div class="wrap">
+    <div class="doc-grid">
+      <!-- Asset 2.png referencia: foto clínica doctor -->
+      <div class="doc-photo anim-l d1">
+        <svg width="310" height="400" viewBox="0 0 310 400" xmlns="http://www.w3.org/2000/svg">
+          <rect width="310" height="400" fill="#1B2F7A" rx="12"/>
+          <ellipse cx="155" cy="148" rx="72" ry="72" fill="#253E99"/>
+          <ellipse cx="155" cy="400" rx="130" ry="88" fill="#253E99"/>
+          <circle cx="155" cy="132" r="50" fill="#3351B5"/>
+          <rect x="100" y="270" width="110" height="9" rx="4.5" fill="white" opacity=".22"/>
+          <rect x="115" y="292" width="80" height="6" rx="3" fill="white" opacity=".13"/>
+          <text x="155" y="372" font-family="Arial" font-size="10" fill="white" text-anchor="middle" font-weight="bold" opacity=".65">Dr. Oswaldo Penissi</text>
+          <text x="155" y="390" font-family="Arial" font-size="8" fill="#A3B5CB" text-anchor="middle">Cirujano Bariátrico</text>
+        </svg>
+      </div>
+      <div class="anim-r d2">
+        <span class="doc-tag">Especialista Líder</span>
+        <h2>Dr. Oswaldo Penissi</h2>
+        <p class="doc-sub">Médico Especialista en Cirugía General · Cirujano Bariátrico Internacional</p>
+        <div class="metrics">
+          <div class="mbox"><div class="n">+6,000</div><div class="l">Procedimientos realizados</div></div>
+          <div class="mbox"><div class="n">+30</div><div class="l">Años de experiencia</div></div>
+          <div class="mbox"><div class="n">4</div><div class="l">Países acreditado</div></div>
+        </div>
+        <div class="cgrid">
+          <div class="cc"><div class="fl">🇺🇸</div><h4>Estados Unidos</h4><p>Family Nurse Practitioner Board Certified, Licencia FNP en Florida · Certified Surgical Assistant</p></div>
+          <div class="cc"><div class="fl">🇪🇸</div><h4>España</h4><p>Médico Homologado por el Reino de España desde 2011</p></div>
+          <div class="cc"><div class="fl">🇧🇷</div><h4>Brasil</h4><p>Cirujano Bariatra · Miembro Sociedad Brasileña de Cirugía Bariátrica y Metabólica</p></div>
+          <div class="cc"><div class="fl">🇻🇪</div><h4>Venezuela</h4><p>Cirujano General y Bariátrico · Miembro fundador SOVCIBAM · +25 años de práctica</p></div>
+        </div>
+        <ul class="elist">
+          <li>MSc Nursing – Family Nurse Practitioner, Miami Regional University (2024)</li>
+          <li>Master en Cirugía Bariátrica, Hospital São Camilo, São Paulo, Brasil (2003)</li>
+          <li>Especialización en Cirugía Laparoscópica Avanzada y Robótica</li>
+          <li>Miembro activo IFSO · Board Certified American Academy of Nurse Practitioners</li>
+          <li>Más de 6,000 procedimientos quirúrgicos bariátricos realizados</li>
+        </ul>
+        <div class="cta-wrap">
+          <a href="https://wa.me/15551234567" class="cta" target="_blank" rel="noopener">
+            <svg width="16" height="16" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a6.072 6.072 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.092.538 4.063 1.481 5.775L0 24l6.371-1.461A11.932 11.932 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.79 9.79 0 0 1-4.989-1.365l-.357-.212-3.782.867.898-3.67-.233-.376A9.79 9.79 0 0 1 2.182 12C2.182 6.578 6.578 2.182 12 2.182S21.818 6.578 21.818 12 17.422 21.818 12 21.818z"/></svg>
+            Consultar con nuestro equipo médico
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO -->
+<section class="sec sec-alt">
+  <div class="wrap">
+    <div class="sh">
+      <span class="tag">Nuestros Pacientes</span>
+      <h2>Te ayudamos a transformar tu salud de forma responsable.</h2>
+      <p>Apoyamos a personas que buscan cambios reales con orientación profesional y resultados seguros.</p>
+    </div>
+    <div class="wgrid">
+      <div class="wcard anim-up d1"><div class="ic">⚖️</div><h3>Bajar de peso</h3><p>Con respaldo médico real, no improvisación</p></div>
+      <div class="wcard anim-up d2"><div class="ic">🔬</div><h3>Controlar el metabolismo</h3><p>Análisis clínico y plan adaptado a tu biología</p></div>
+      <div class="wcard anim-up d3"><div class="ic">🥗</div><h3>Mejorar hábitos alimenticios</h3><p>Educación nutricional con criterio médico</p></div>
+      <div class="wcard anim-up d4"><div class="ic">⚡</div><h3>Aumentar energía diaria</h3><p>Tratamientos que mejoran tu calidad de vida</p></div>
+      <div class="wcard anim-up d5"><div class="ic">📈</div><h3>Resultados sostenibles</h3><p>Hábitos a largo plazo, no soluciones temporales</p></div>
+      <div class="wcard anim-up d6"><div class="ic">🛡️</div><h3>Evitar complicaciones</h3><p>Supervisión constante para tu seguridad</p></div>
+      <div class="wcard anim-up d7"><div class="ic">🤝</div><h3>Acompañamiento real</h3><p>Equipo profesional comprometido con tu proceso</p></div>
+      <div class="wcard anim-up d8"><div class="ic">🌎</div><h3>Atención en EE.UU.</h3><p>Virtual en todo el país, envíos a gran parte del territorio</p></div>
+    </div>
+    <div class="cta-wrap tc">
+      <a href="https://wa.me/15551234567" class="cta" target="_blank" rel="noopener">
+        <svg width="16" height="16" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a6.072 6.072 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.092.538 4.063 1.481 5.775L0 24l6.371-1.461A11.932 11.932 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.79 9.79 0 0 1-4.989-1.365l-.357-.212-3.782.867.898-3.67-.233-.376A9.79 9.79 0 0 1 2.182 12C2.182 6.578 6.578 2.182 12 2.182S21.818 6.578 21.818 12 17.422 21.818 12 21.818z"/></svg>
+        Quiero información por WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section class="sec">
+  <div class="wrap">
+    <div class="agrid">
+      <div>
+        <span class="tag">Metodología</span>
+        <h2 class="lft">Un proceso guiado, no una solución genérica.</h2>
+        <p style="color:#555;font-size:.91rem;margin-bottom:4px;">Nuestro método combina ciencia, experiencia clínica y acompañamiento humano.</p>
+        <ul class="alist">
+          <li><div class="ck"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><span>Evaluación clínica completa</span></li>
+          <li><div class="ck"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><span>Plan personalizado según tus necesidades</span></li>
+          <li><div class="ck"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><span>Seguimiento constante</span></li>
+          <li><div class="ck"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><span>Ajustes según tu progreso</span></li>
+          <li><div class="ck"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><span>Orientación profesional en cada etapa</span></li>
+        </ul>
+        <div class="anote">Cada cuerpo es distinto. Por eso primero te conocemos, evaluamos y luego diseñamos tu plan. Nuestro objetivo es que, con el tiempo, puedas mantener tus resultados a través de hábitos saludables y educación médica.</div>
+        <div class="cta-wrap">
+          <a href="https://wa.me/15551234567" class="cta" target="_blank" rel="noopener">
+            <svg width="16" height="16" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a6.072 6.072 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.092.538 4.063 1.481 5.775L0 24l6.371-1.461A11.932 11.932 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.79 9.79 0 0 1-4.989-1.365l-.357-.212-3.782.867.898-3.67-.233-.376A9.79 9.79 0 0 1 2.182 12C2.182 6.578 6.578 2.182 12 2.182S21.818 6.578 21.818 12 17.422 21.818 12 21.818z"/></svg>
+            Escríbenos por WhatsApp
+          </a>
+        </div>
+      </div>
+      <!-- Asset 1.png referencia: ilustración plan personalizado -->
+      <div class="ibox">
+        <svg width="100%" height="380" viewBox="0 0 520 380" xmlns="http://www.w3.org/2000/svg">
+          <rect width="520" height="380" fill="#EAF0F8" rx="12"/>
+          <rect x="36" y="36" width="190" height="308" rx="12" fill="#C8D5E8"/>
+          <rect x="54" y="54" width="154" height="96" rx="8" fill="#A3B5CB"/>
+          <circle cx="131" cy="240" r="50" fill="#A3B5CB"/>
+          <rect x="264" y="56" width="148" height="12" rx="6" fill="#000B57" opacity=".2"/>
+          <rect x="264" y="82" width="210" height="8" rx="4" fill="#C8D5E8"/>
+          <rect x="264" y="102" width="175" height="8" rx="4" fill="#C8D5E8"/>
+          <rect x="264" y="138" width="195" height="2" fill="#C8D5E8"/>
+          <rect x="264" y="158" width="170" height="8" rx="4" fill="#C8D5E8"/>
+          <rect x="264" y="178" width="140" height="8" rx="4" fill="#C8D5E8"/>
+          <rect x="264" y="220" width="60" height="24" rx="12" fill="#000B57" opacity=".16"/>
+          <rect x="334" y="220" width="60" height="24" rx="12" fill="#FE1413" opacity=".14"/>
+          <rect x="264" y="300" width="190" height="38" rx="19" fill="#00139E" opacity=".14"/>
+          <text x="359" y="325" font-family="Arial" font-size="10" fill="#000B57" text-anchor="middle" font-weight="bold" opacity=".65">Plan Personalizado</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GLP-1 -->
+<section class="sec sec-alt">
+  <div class="wrap">
+    <div class="ggrid">
+      <!-- Asset: Opciones terapéuticas / científico -->
+      <div class="ibox">
+        <svg width="100%" height="360" viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg">
+          <rect width="520" height="360" fill="#E4ECF5" rx="12"/>
+          <rect x="68" y="56" width="58" height="208" rx="8" fill="#A3B5CB"/>
+          <rect x="160" y="96" width="58" height="168" rx="8" fill="#00139E" opacity=".28"/>
+          <rect x="252" y="44" width="58" height="220" rx="8" fill="#A3B5CB"/>
+          <rect x="344" y="82" width="58" height="182" rx="8" fill="#00139E" opacity=".28"/>
+          <rect x="436" y="120" width="58" height="144" rx="8" fill="#FE1413" opacity=".2"/>
+          <line x1="48" y1="276" x2="472" y2="276" stroke="#C8D5E8" stroke-width="2"/>
+          <text x="260" y="326" font-family="Arial" font-size="11" fill="#000B57" text-anchor="middle" font-weight="bold" opacity=".65">Opciones Terapéuticas FDA Aprobadas</text>
+        </svg>
+      </div>
+      <div>
+        <span class="tag">Opciones Terapéuticas · GLP-1</span>
+        <h2 class="lft">Tratamientos bajo indicación y supervisión médica.</h2>
+        <p style="color:#555;margin:13px 0;font-size:.91rem;">En algunos casos, el equipo puede recomendar opciones terapéuticas aprobadas por la FDA, siempre bajo evaluación profesional. Cuando es necesario, el tratamiento puede ser enviado directamente a tu domicilio, con instrucciones claras y acompañamiento continuo.</p>
+        <div class="badges">
+          <div class="badge">✅ Aprobado FDA</div>
+          <div class="badge">🚚 Envío a domicilio</div>
+          <div class="badge">👨‍⚕️ Supervisión médica</div>
+          <div class="badge">📋 Instrucciones claras</div>
+        </div>
+        <p style="color:#555;font-size:.86rem;">Recibirás orientación segura y seguimiento médico durante todo el proceso. Nada se prescribe sin evaluación clínica previa.</p>
+        <div class="cta-wrap">
+          <a href="https://wa.me/15551234567" class="cta" target="_blank" rel="noopener">
+            <svg width="16" height="16" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a6.072 6.072 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.092.538 4.063 1.481 5.775L0 24l6.371-1.461A11.932 11.932 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.79 9.79 0 0 1-4.989-1.365l-.357-.212-3.782.867.898-3.67-.233-.376A9.79 9.79 0 0 1 2.182 12C2.182 6.578 6.578 2.182 12 2.182S21.818 6.578 21.818 12 17.422 21.818 12 21.818z"/></svg>
+            Consultar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUATION -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sh">
+      <span class="tag">Valoración Médica</span>
+      <h2>Tu salud merece un plan bien hecho.</h2>
+      <p>Antes de iniciar cualquier proceso, realizamos una evaluación completa y personalizada.</p>
+    </div>
+    <ul class="vlist">
+      <li><div class="vck"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><p>Evaluamos tu historial médico completo</p></li>
+      <li><div class="vck"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><p>Definimos objetivos realistas de acuerdo a tus necesidades</p></li>
+      <li><div class="vck"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><p>Analizamos tu metabolismo según tus comorbilidades</p></li>
+      <li><div class="vck"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><p>Diseñamos un plan seguro y personalizado</p></li>
+      <li><div class="vck"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><p>Establecemos seguimiento profesional desde el primer día</p></li>
+    </ul>
+    <p class="vnote">Nada es al azar. Todo es guiado por criterios médicos.</p>
+    <div class="tc">
+      <a href="https://wa.me/15551234567" class="cta" target="_blank" rel="noopener">
+        <svg width="16" height="16" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a6.072 6.072 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.092.538 4.063 1.481 5.775L0 24l6.371-1.461A11.932 11.932 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.79 9.79 0 0 1-4.989-1.365l-.357-.212-3.782.867.898-3.67-.233-.376A9.79 9.79 0 0 1 2.182 12C2.182 6.578 6.578 2.182 12 2.182S21.818 6.578 21.818 12 17.422 21.818 12 21.818z"/></svg>
+        Agenda por WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section class="sec sec-alt">
+  <div class="wrap">
+    <div class="sh">
+      <span class="tag">Proceso</span>
+      <h2>Así funciona American Slim Fast</h2>
+      <p>Tres pasos claros para comenzar tu transformación con respaldo médico real.</p>
+    </div>
+    <div class="sgrid">
+      <div class="scard">
+        <div class="snum">01</div>
+        <h3>Contacto Inicial</h3>
+        <p>Hablas con nuestro equipo por WhatsApp y resolvemos todas tus dudas sin compromiso.</p>
+      </div>
+      <div class="scard">
+        <div class="snum">02</div>
+        <h3>Evaluación y Plan</h3>
+        <p>Definimos tu protocolo personalizado según tu estado de salud y objetivos específicos.</p>
+      </div>
+      <div class="scard">
+        <div class="snum">03</div>
+        <h3>Seguimiento</h3>
+        <p>Te acompañamos durante todo el proceso, ajustando el plan según tu evolución real.</p>
+      </div>
+    </div>
+    <p class="stag">SIMPLE. CLARO. PROFESIONAL.</p>
+    <div class="tc">
+      <a href="https://wa.me/15551234567" class="cta" target="_blank" rel="noopener">
+        <svg width="16" height="16" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a6.072 6.072 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.092.538 4.063 1.481 5.775L0 24l6.371-1.461A11.932 11.932 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.79 9.79 0 0 1-4.989-1.365l-.357-.212-3.782.867.898-3.67-.233-.376A9.79 9.79 0 0 1 2.182 12C2.182 6.578 6.578 2.182 12 2.182S21.818 6.578 21.818 12 17.422 21.818 12 21.818z"/></svg>
+        Hablar ahora por WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sh">
+      <span class="tag">Preguntas Frecuentes</span>
+      <h2>Resolvemos tus dudas</h2>
+    </div>
+    <div class="flist">
+      <div class="fi">
+        <input type="checkbox" class="fcb" id="f1"/>
+        <label class="flbl" for="f1">¿Quién puede aplicar? <span class="farr">▾</span></label>
+        <div class="fbody"><p>Adultos mayores de 18 años, sujetos a evaluación médica previa. El Dr. Penissi y su equipo evaluarán tu caso de forma individual para determinar el plan más adecuado.</p></div>
+      </div>
+      <div class="fi">
+        <input type="checkbox" class="fcb" id="f2"/>
+        <label class="flbl" for="f2">¿Atienden fuera del estado de Florida? <span class="farr">▾</span></label>
+        <div class="fbody"><p>Sí. Brindamos atención virtual en todo Estados Unidos y realizamos envíos a gran parte del territorio nacional. No necesitas vivir en Florida para acceder a nuestros servicios.</p></div>
+      </div>
+      <div class="fi">
+        <input type="checkbox" class="fcb" id="f3"/>
+        <label class="flbl" for="f3">¿Es seguro el tratamiento? <span class="farr">▾</span></label>
+        <div class="fbody"><p>Sí. Trabajamos únicamente con opciones aprobadas por la FDA, bajo supervisión médica estricta. Todos los tratamientos se prescriben conforme a criterios clínicos y permisos profesionales actualizados.</p></div>
+      </div>
+      <div class="fi">
+        <input type="checkbox" class="fcb" id="f4"/>
+        <label class="flbl" for="f4">¿Cuánto dura el proceso? <span class="farr">▾</span></label>
+        <div class="fbody"><p>El tratamiento se maneja por ciclos. De forma general, el periodo recomendado es de entre 3 y 6 meses hasta 1 año, dependiendo de cada persona, sus objetivos y su respuesta al plan.</p></div>
+      </div>
+      <div class="fi">
+        <input type="checkbox" class="fcb" id="f5"/>
+        <label class="flbl" for="f5">¿Cómo empiezo? <span class="farr">▾</span></label>
+        <div class="fbody"><p>Escríbenos por WhatsApp y nuestro equipo médico te asesorará personalmente, evaluará tu caso y te orientará sobre el mejor camino para ti. El primer paso es una conversación, sin presión ni compromiso.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER CTA -->
+<section class="ftcta">
+  <div class="wrap">
+    <!-- Asset 1.png / isotipo vertical para fondo oscuro -->
+    <div class="flogo">
+      <svg width="76" height="76" viewBox="0 0 100 100" fill="none">
+        <path d="M50 10C74 16 90 31 90 50C90 69 74 84 50 90" stroke="white" stroke-width="12" stroke-linecap="round"/>
+        <path d="M50 10C26 16 10 31 10 50C10 69 26 84 50 90" stroke="#FE1413" stroke-width="12" stroke-linecap="round"/>
+        <circle cx="50" cy="10" r="5" fill="white"/>
+        <circle cx="90" cy="50" r="5" fill="white"/>
+        <circle cx="10" cy="50" r="5" fill="#FE1413"/>
+        <circle cx="50" cy="90" r="5" fill="#FE1413"/>
+      </svg>
+      <div class="fbrand">AMERICAN SLIM FAST</div>
+    </div>
+    <h2>Empieza hoy tu proceso con respaldo médico real.</h2>
+    <p class="sub">No improvises con tu salud. Habla con nuestro equipo y recibe orientación clara, profesional y personalizada.</p>
+    <a href="https://wa.me/15551234567" class="cta" target="_blank" rel="noopener" style="font-size:1.02rem;padding:17px 36px;box-shadow:0 8px 32px rgba(254,20,19,.48);">
+      <svg width="19" height="19" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a6.072 6.072 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.092.538 4.063 1.481 5.775L0 24l6.371-1.461A11.932 11.932 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.79 9.79 0 0 1-4.989-1.365l-.357-.212-3.782.867.898-3.67-.233-.376A9.79 9.79 0 0 1 2.182 12C2.182 6.578 6.578 2.182 12 2.182S21.818 6.578 21.818 12 17.422 21.818 12 21.818z"/></svg>
+      Contactar por WhatsApp Ahora
+    </a>
+  </div>
+</section>
+<div class="fbot">
+  <p>© 2025 American Slim Fast. Todos los derechos reservados. Este sitio tiene fines informativos. Consulta a un profesional médico antes de iniciar cualquier tratamiento.</p>
+</div>
+
+</body>
+</html>
